@@ -8,6 +8,5 @@ if __name__ == "__main__":
         print("{} value: ".format(why))
     else:
         print("{} value: ".format(why))
-
     for o in range(why):
         print("{}: {:s}".format(o + 1, argv[o + 1]))
