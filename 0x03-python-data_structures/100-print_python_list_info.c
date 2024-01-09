@@ -2,10 +2,16 @@
 #include <object.h>
 #include <listobject.h>
 
+/**
+ * print_python_list_info - main
+ * @p: parameter
+ *
+ */
+
 void print_python_list_info(PyObject *p)
 {
-	long int size = PyList_Size(p);
 	int i;
+	long int size = PyList_Size(p);
 
 	PyListObject *obj = (PyListObject *)p;
 
