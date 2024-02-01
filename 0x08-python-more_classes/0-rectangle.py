@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-'''rectangle class'''
+"""rectangle class"""
 
 
 class Rectangle:
