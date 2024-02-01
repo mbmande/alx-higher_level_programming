@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-'''Defines Rectangle class.'''
+"""Defines Rectangle class."""
 
 
 
 class Rectangle:
-    '''the rectangle class.'''
+    """the Rectangle class."""
     pass
