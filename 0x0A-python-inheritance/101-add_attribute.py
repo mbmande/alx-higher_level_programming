@@ -1,6 +1,7 @@
 #!/usr/bin/python
 """the module"""
 
+
 def add_attribute(obj, att, value):
     """the attributes"""
 
