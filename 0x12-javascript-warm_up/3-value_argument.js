@@ -1,5 +1,7 @@
 #!/usr/bin/node
 
+/*jhdwjdh */
+
 if (process.argv[2]) {
 	console.log(process.argv[2]);
 } 
