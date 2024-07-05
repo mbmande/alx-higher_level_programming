@@ -1,3 +1,3 @@
 #!/bin/bash
 # cjhsdckshcwi
-curl -sL "$1"
+curl -s -L "$1"
