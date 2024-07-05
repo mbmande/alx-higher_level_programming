@@ -4,16 +4,17 @@ sgdsjdsjdsdkjldksdjk
 """
 
 def find_peak(list_of_integers):
-    if not list_of_integers:
-        return None
+        size = len(list_of_integers)
+            mid = size // 2
 
-    left, right = 0, len(list_of_integers) - 1
+                if size == 0:
+                            return None
 
-    while left < right:
-        mid = (left + right) // 2
-        if list_of_integers[mid] < list_of_integers[mid + 1]:
-            left = mid + 1
-        else:
-            right = mid
-
-    return list_of_integers[left]
+                            while True:
+                                        mid_e = size // 2
+                                                if mid < size - 1 and list_of_integers[mid] < list_of_integers[mid + 1]:
+                                                                mid = mid + mid_e // 2
+                                                                        elif mid_e > 0 and list_of_integers[mid] < list_of_integers[mid - 1]:
+                                                                                        mid = mid - mid_e // 2
+                                                                                                else:
+                                                                                                                return list_of_integers[mid]
