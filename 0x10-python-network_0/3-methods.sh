@@ -1,3 +1,3 @@
 #!/bin/bash
 # bvjhyhggghgkghg
-curl -sI "$1" | awk '/Allow/ { $1=""; print $0 }'
+curl -sI "$1" | grep "Allow" | cut -d " " -f 2-
