@@ -1,21 +1,18 @@
-#!/usr/bin/env node
+#!/usr/bin/node
 
-const axios = require('axios');
-const fs = require('fs/promises');
+const request = require('request');
+const fs = require('fs');
 const url = process.argv[2];
 const file = process.argv[3];
 
-const handleError = (error) => {
-  console.error('Error:', error);
-};
-
-const fetchDataAndSave = async (url, file) => {
-  try {
-    const response = await axios.get(url);
-    await fs.writeFile(file, response.data, 'utf8');
-  } catch (error) {
-    handleError(error);
+request(url, (error, response, body) => {
+  if (error) {
+    console.log(error);
+  } else {
+    fs.writeFile(file, body, 'utf8', (error) => {
+      if (error) {
+        console.log(error);
+      }
+    });
   }
-};
-
-fetchDataAndSave(url, file);
+});
